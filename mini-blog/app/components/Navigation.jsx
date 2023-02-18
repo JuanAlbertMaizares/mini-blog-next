@@ -1,3 +1,4 @@
+import styles from './Navigation.module.css';
 import Link from 'next/link'
 
 const links = [{
@@ -10,9 +11,9 @@ const links = [{
 
 export function Navigation () {
   return (
-    <header>
+    <header className={styles.header}>
       <nav>
-        <ul>
+        <ul className={styles.navigation}>
           {links.map(({ label, route }) => (
             <li key={route}>
               <Link href={route}>
