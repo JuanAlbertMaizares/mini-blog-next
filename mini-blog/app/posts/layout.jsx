@@ -1,7 +1,7 @@
-export default function PostsLayout({children}) {
+export default function Layout({children}) {
     return (
         <div>
-            <small> Home $bull; Posts </small>
+            <marquee style={{ background: '#AEADA9', color: '#0A1548' }}> Mini-Blog :) </marquee>
             {children}
         </div>
     )
